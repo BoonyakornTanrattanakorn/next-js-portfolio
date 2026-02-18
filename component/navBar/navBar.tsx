@@ -1,32 +1,33 @@
 'use client';
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from "@heroui/react";
+import '@/app/globals.css';
 
 export default function NavBar() {
   return (
-    <Navbar position="static">
+    <Navbar position="static" className="bg-gray-800 flex p-5 gap-5 w-full justify-between">
       {/* <NavbarBrand>
 
       </NavbarBrand> */}
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="bg-pink-500">
         <NavbarItem>
-          <Link color="foreground" href="/">
+          <Link href="/">
             Home
           </Link>
         </NavbarItem>
-        <NavbarItem isActive>
-          <Link aria-current="page" href="/blog">
+        <NavbarItem>
+          <Link href="/blog">
             Blog
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="/projects">
+          <Link href="/projects">
             Project
           </Link>
         </NavbarItem>
       </NavbarContent>
-      <NavbarContent justify="end">
-        <NavbarItem isActive>
-          <Link aria-current="page" href="/contact">
+      <NavbarContent className="bg-pink-500">
+        <NavbarItem>
+          <Link href="/contact">
             Contact
           </Link>
         </NavbarItem>
