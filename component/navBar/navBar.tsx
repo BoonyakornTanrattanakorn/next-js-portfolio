@@ -3,30 +3,30 @@ import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from "@h
 
 export default function NavBar() {
   return (
-    <Navbar position="static">
+    <Navbar position="static" className="p-4 font-bold">
       {/* <NavbarBrand>
 
       </NavbarBrand> */}
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent justify="center" className="flex-1">
         <NavbarItem>
-          <Link color="foreground" href="/">
+          <Link href="/">
             Home
           </Link>
         </NavbarItem>
-        <NavbarItem isActive>
-          <Link aria-current="page" href="/blog">
+        <NavbarItem>
+          <Link href="/blog">
             Blog
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="/projects">
+          <Link href="/projects">
             Project
           </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
-        <NavbarItem isActive>
-          <Link aria-current="page" href="/contact">
+        <NavbarItem>
+          <Link href="/contact">
             Contact
           </Link>
         </NavbarItem>
