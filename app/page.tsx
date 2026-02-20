@@ -1,7 +1,10 @@
 import Image from "next/image";
+import { loremIpsum } from "@/app/loremIpsum";
 
 export default function Home() {
   return (
-    <h1>Hello, World!</h1>
+    <div className="bg-white min-h-screen min-w-screen">
+      <h1 className="text-black">{loremIpsum}</h1>
+    </div>
   );
 }
